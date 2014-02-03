@@ -1,0 +1,17 @@
+- title ||= 'apps.hel.fi'
+!!! 5
+%html
+  %head
+    %meta{ :charset => "utf-8" }/
+    %meta{ :content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }/
+    %meta{ :name => "viewport", :content => "initial-scale=1" }/
+    %title= title
+    %link{ :rel => "shortcut icon", :href => "/favicon.ico", :type=> "image/x-icon"}
+    %link{ :rel => "icon", :href => "/favicon.ico", :type => "image/x-icon"}
+    %link{ :href => "/stylesheets/screen.css", :rel => "stylesheet", :type => "text/css", :media => "all" }
+  %body{ :lang => 'en' }
+    .g-navigation=render "navigation"
+    .g-content
+      != yield
+    %script{ :type => "text/javascript", :src=> "/javascripts/jquery.min.js" }
+    %script{ :type => "text/javascript", :src=> "/javascripts/bootstrap.min.js" }

@@ -1,0 +1,55 @@
+%form.filtering-form(role="form")
+  %h3 Filter
+  .filter-text.form-group
+    %label(for="searchfield")
+      Search
+    %input.form-control#searchfield(type="text" placeholder="search")
+  .filter-category.form-group
+    %label(for="category")
+      Category
+    %select.form-control#category(multiple)
+      %option
+        Travel
+      %option
+        Food & drink
+      %option
+        Transport
+      %option
+        Culture
+  .filter-accessibility.form-group
+    %label(for="accessibility")
+      Accessibility
+    %select.form-control#accessibility(multiple)
+      %option
+        Visually impaired
+      %option
+        Limited mobility
+      %option
+        Hearing problems
+      %option
+        Simplified
+  .filter-platform.form-group
+    %label(for="platform")
+      Platform
+    %select.form-control#platform(multiple)
+      %option
+        iOS
+      %option
+        Android
+      %option
+        Windows
+      %option
+        Google
+  .filter-language.form-group
+    %label(for="language")
+      Language
+    %select.form-control#language(multiple)
+      %option
+        English
+      %option
+        Finnish
+      %option
+        Japanese
+      %option
+        Russian
+  .filter-rating.form-group
