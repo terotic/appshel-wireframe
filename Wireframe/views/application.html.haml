@@ -1,20 +1,62 @@
 
-%h2.app__name
-  Application Name
-.app__icon
-  %img(src="/images/appicon-placer.png")
-.app__tags
-  %ul.taglist
-    %li.taglist__tag
-      Tourism
-    %li.taglist__tag
-      English
-    %li.taglist__tag
-      Restricted mobility
-Category
-.app__short-description
-  Nam id summis ingeniis, tempor reprehenderit se vidisse. Nam malis qui ipsum. 
-  Nam tempor illustriora.
+.app__header
+  %h2.app__name
+    Application Name
+  .app__publisher
+    App Publisher Inc Oy Ab
+  .app__short-description
+    Nam id summis ingeniis, tempor reprehenderit se vidisse. Nam malis qui ipsum. 
+    Nam tempor illustriora.
+    
+.app__details
+  .app_details__first
+    .app__icon
+      %img(src="/images/appicon-placer.png")
+  .app_details__second
+    .app__rating
+      Rating: 
+      %span.glyphicon.glyphicon-star
+      %span.glyphicon.glyphicon-star
+      %span.glyphicon.glyphicon-star
+      %span.glyphicon.glyphicon-star-empty
+      %span.glyphicon.glyphicon-star-empty
+    .app__languages
+      Category
+      %ul.language-list
+        %li.language-list__language Tourism
+        %li.language-list__language Food & Drink
+    .app__languages
+      Languages
+      %ul.language-list
+        %li.language-list__language Finnish
+        %li.language-list__language English
+        %li.language-list__language Russian
+    .app__languages
+      Accessibility
+      %ul.language-list
+        %li.language-list__language Restricted Mobility
+        %li.language-list__language Hearing
+    .app__languages
+      Web connection required
+    .app__version
+      Version
+      2.2.2.0
+    .app__updated
+      Updated
+      31.1.2014
+  .app__platforms
+    %ul.platform-list
+      %li.platform-list__platform.platform-list__platform--ios
+        %a.platform__download(a href="#") iOS
+      %li.platform-list__platform.platform-list__platform--android
+        %a.platform__download(a href="#") Android
+      %li.platform-list__platform.platform-list__platform--windows
+        %a.platform__download(a href="#") Windows
+    .app__links
+      .app__link.app-link--publisherwebsite
+        %a(href="#") Publisher Website >>
+      .app-link.app-link--support
+        %a(href="#") Support Website >>
 .app__long-description
   Fabulas irure officia se quem litteris o fore magna id irure ullamco mentitum 
   qui eiusmod malis illum qui multos. Occaecat legam e officia exquisitaque ut ad 
@@ -25,44 +67,42 @@ Category
   laborum de legam doctrina de dolore e nescius a amet. Ex veniam est cillum, 
   aliquip despicationes ut senserit ex elit occaecat se quae aliqua, qui aliqua ad 
   varias.
-.app__publisher
-  App Publisher Inc Oy Ab
-.app__languages
-  %ul.language-list
-    %li.language-list__language
-      Finnish
-    %li.language-list__language
-      English
-    %li.language-list__language
-      Russian
-.app__platforms
-  %ul.platform-list
-    %li.platform-list__platform.platform-list__platform--ios
-      IOS
-    %li.platform-list__platform.platform-list__platform--android
-      Android
-    %li.platform-list__platform.platform-list__platform--windows
-      Windows
-.app__website
-  Website
-.app__support
-  Support-website
-.app__rating
-  Rating: ******
+
 .app__screenshots
-  %ul.screenshot-list
-    %li.screenshot-list__slide
-      [screenshot image]
-    %li.screenshot-list__slide
-      [screenshot image]
-    %li.screenshot-list__slide
-      [screenshot image]
-.app__version
-  2.2.2.0
-.updated
-  31.1.2014
-(reviews)
-(filesize)
-(downloads)
-** related **
-** share **
+  #j-screenshots-carousel.carousel.slide(data-ride="carousel")
+    <!-- Indicators -->
+    %ol.carousel-indicators
+      %li.active(data-target="#j-screenshots-carousel" data-slide-to="0")
+      %li(data-target="#j-screenshots-carousel" data-slide-to="1")
+      %li(data-target="#j-screenshots-carousel" data-slide-to="2")
+  
+    <!-- Wrapper for slides -->
+    .carousel-inner
+      .item.active
+        %img(src="/images/screenshot-placer.png" alt="Screenshot")
+      .item
+        %img(src="/images/screenshot-placer.png" alt="Screenshot")
+      .item
+        %img(src="/images/screenshot-placer.png" alt="Screenshot")
+  
+    <!-- Controls -->
+    %a.left.carousel-control(href="#j-screenshots-carousel" data-slide="prev")
+      %span.glyphicon.glyphicon-chevron-left
+    %a.right.carousel-control(href="#j-screenshots-carousel" data-slide="next")
+      %span.glyphicon.glyphicon-chevron-right
+
+.related-apps
+  %h3 Similar Applications
+  %ul.similar-apps-list
+    %li.similar-apps-list__app
+      %a.similar-apps__link(a href="#") 
+        %img(src="/images/appicon-placer.png")
+    %li.similar-apps-list__app
+      %a.similar-apps__link(a href="#")
+        %img(src="/images/appicon-placer.png")
+    %li.similar-apps-list__app
+      %a.similar-apps__link(a href="#")
+        %img(src="/images/appicon-placer.png")
+    %li.similar-apps-list__app
+      %a.similar-apps__link(a href="#")
+        %img(src="/images/appicon-placer.png")
