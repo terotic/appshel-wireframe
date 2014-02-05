@@ -40,7 +40,37 @@ img {
   .img-responsive();
 }
 
+.image--responsive{
+    max-height: 450px;
+    overflow: hidden;
+    max-width: 800px;       
+    -webkit-transition: max-width .5s ease-out;  /* Saf3.2+, Chrome */
+    -moz-transition: max-width .5s ease-out;  /* FF4+ */
+    -ms-transition: max-width .5s ease-out;  /* IE10? */
+    -o-transition: max-width .5s ease-out;  /* Opera 10.5+ */
+    transition: max-width .5s ease-out;
+    img {
+        width: 100%;
+        -webkit-transition: margin-top .5s ease-out;  /* Saf3.2+, Chrome */
+        -moz-transition: margin-top .5s ease-out;  /* FF4+ */
+        -ms-transition: margin-top .5s ease-out;  /* IE10? */
+        -o-transition: margin-top .5s ease-out;  /* Opera 10.5+ */
+        transition: margin-top .5s ease-out;
+    }
+}
 
+@media only screen and (min-width: 1160px) {
+    .image--responsive { max-width: 1000px; }
+}
+
+
+.navigation-bar {
+  .navbar(); 
+  .navbar-default();
+  background: #333;
+}
+
+/*****   APP LISTING PAGE  ******/
 
 .app-listing {
   .panel();
@@ -52,11 +82,15 @@ img {
   //width: 92px;
 }
 
-
-.navigation-bar {
-  .navbar(); 
-  .navbar-default();
-  background: #333;
+.filter-header {
+  //text-align: right;
+  .filter-header-label {
+    font-weight: bold;
+  }
+  a {
+    display: block;
+    float: right;
+  }
 }
 
 .filter-settings {
@@ -116,6 +150,9 @@ img {
     //margin-left: 10px;
   }
 }
+
+
+/*****   APP PAGE  ******/
 
 .app__header {
   margin-bottom: 24px;
@@ -224,6 +261,7 @@ img {
     text-align: center;
     img {
       margin: auto;
+      max-height: 600px;
     }
   }
 }
@@ -254,8 +292,37 @@ img {
   padding: 12px;
 }
 
+/*****   FOOTER  ******/
+
 .main-footer-content {
   text-align: center;
   color: #FFF;
 }
 
+/*****   CATEGORIES PAGE  ******/
+
+.category-content {
+  //height: 200px;
+  background: #CCC;
+  .clearfix();
+  margin-bottom: 24px;
+}
+
+.category--icon {
+    font-size: 56px;
+    text-align: center;
+    padding: 64px;
+}
+ 
+.category--name {
+  font-size: 24px;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+}
+
+.category--count {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+}

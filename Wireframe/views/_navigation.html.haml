@@ -9,24 +9,20 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a(class="navbar-brand" href="#")
+      %a(class="navbar-brand" href="/index/")
         apps.hel.fi
     <!-- Collect the nav links, forms, and other content for toggling -->
     .collapse.navbar-collapse#bs-example-navbar-collapse-1
       %ul.nav.navbar-nav#j-pagenavi   
-        %li
-          %a(href="/index/")Front
         %li  
-          %a(href="/list/")List
-        %li  
-          %a(href="/application/")Application 
+          %a(href="/list/")Applications
         %li  
           %a(href="/categories/")Categories 
-      %form(class="navbar-form navbar-left" role="search")
-        .form-group
-          %input(type="text" class="form-control" placeholder="Search")
-        %button(type="submit" class="btn btn-default")
-          Submit
-      %ul.nav.navbar-nav.navbar-right
         %li  
           %a(href="/info/")Info 
+      %ul.nav.navbar-nav.navbar-right
+        %form(class="navbar-form navbar-left" role="search")
+          .form-group
+            %input(type="text" class="form-control" placeholder="Search")
+            %button(type="submit" class="btn btn-default")
+              Submit
